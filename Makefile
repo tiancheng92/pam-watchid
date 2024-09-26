@@ -1,7 +1,7 @@
 VERSION = 2
 LIBRARY_NAME = pam_watchid.so
 DESTINATION = /usr/local/lib/pam
-TARGET = arm64-apple-darwin23.1.0
+TARGET = arm64-apple-darwin24.0.0
 
 all:
 	swiftc watchid-pam-extension.swift -o $(LIBRARY_NAME) -target $(TARGET) -emit-library
